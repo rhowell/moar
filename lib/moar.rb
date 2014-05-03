@@ -1,4 +1,4 @@
 
-module MoAR
+module Moar
   require 'moar/railtie' if defined?(Rails)
 end

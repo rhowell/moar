@@ -1,5 +1,5 @@
 require 'moar'
 
-describe MoAR do
+describe Moar do
 
 end
