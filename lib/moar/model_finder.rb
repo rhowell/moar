@@ -17,11 +17,6 @@ module Moar
       mf
     end
 
-    def initialize
-      self.files = Set.new
-      self.models = {}
-    end
-
     def get_files(curr_dir = ROOT_PATH)
       files_in_dir = []
       entries = Dir.entries(curr_dir).map { |e| File.join(curr_dir, e) }
@@ -78,6 +73,13 @@ module Moar
       end while insertions_this_round > 0
 
       root.map { |n| n.name }
+    end
+
+    # You should only ever need to run the class method
+    protected
+    def initialize
+      self.files = Set.new
+      self.models = {}
     end
   end
 end
