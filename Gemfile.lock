@@ -29,6 +29,11 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
+    byebug (2.7.0)
+      columnize (~> 0.3)
+      debugger-linecache (~> 1.2)
+    columnize (0.3.6)
+    debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     hike (1.2.3)
@@ -80,6 +85,9 @@ GEM
       rspec-mocks (= 3.0.0.beta2)
       rspec-support (= 3.0.0.beta2)
     rspec-support (3.0.0.beta2)
+    rubytree (0.9.3)
+      json (~> 1.8)
+      structured_warnings (~> 0.1)
     sprockets (2.12.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -89,6 +97,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    structured_warnings (0.1.4)
     thor (0.19.1)
     thread_safe (0.3.3)
     tilt (1.4.1)
@@ -102,5 +111,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   rails (= 4.1.0)
   rspec-rails (~> 3.0.0.beta)
+  rubytree
